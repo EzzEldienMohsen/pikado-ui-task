@@ -1,4 +1,14 @@
 {
   "slider 1": "عنصر الشريط الجانبي 1",
-  "slider 2": "عنصر الشريط الجانبي 2"
+  "slider 2": "عنصر الشريط الجانبي 2",
+  "page title": "محتوى الصفحة الرئيسية",
+  "name": "الاسم",
+  "job": "الوظيفة",
+  "favorite color": "اللون المفضل",
+  "quality control specialist": "أخصائي مراقبة الجودة",
+  "desktop support technician": "فني دعم الحاسوب",
+  "tax accountant": "محاسب ضريبي",
+  "blue": "أزرق",
+  "purple": "أرجواني",
+  "red": "أحمر"
 }

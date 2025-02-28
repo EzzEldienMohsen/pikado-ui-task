@@ -1,4 +1,14 @@
 {
   "slider 1": "Sidebar Item 1",
-  "slider 2": "Sidebar Item 2"
+  "slider 2": "Sidebar Item 2",
+  "page title": "Main Page Content",
+  "name": "Name",
+  "job": "Job",
+  "favorite color": "Favorite Color",
+  "quality control specialist": "Quality Control Specialist",
+  "desktop support technician": "Desktop Support Technician",
+  "tax accountant": "Tax Accountant",
+  "blue": "Blue",
+  "purple": "Purple",
+  "red": "Red"
 }
