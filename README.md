@@ -1,54 +1,96 @@
-# React + TypeScript + Vite
+# Pikado UI Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive dashboard layout built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a responsive dashboard layout that demonstrates a clean UI using React functional components, TypeScript, and Tailwind CSS. It features:
 
-## Expanding the ESLint configuration
+- A collapsible sidebar (optimized for mobile responsiveness)
+- A top navigation bar with a title and a user avatar
+- A main content area displaying a static table with mock data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Optionally, it includes a light/dark mode toggle implemented using React Context API.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Responsive Layout:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  - Collapsible sidebar on mobile devices
+  - Adaptive design ensuring usability across devices
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **UI Components:**
+
+  - **Sidebar:** Contains navigation links and collapses on smaller screens
+  - **Top Navigation Bar:** Displays the project title and a user avatar
+  - **Main Content:** Showcases a static table with mock data for demonstration
+
+- **Technical Implementation:**
+  - Developed with React functional components and hooks
+  - TypeScript is used for strong typing and component interfaces
+  - Styling is fully handled by Tailwind CSS without inline styles
+  - (Optional) Light/Dark mode toggle via React Context API
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/EzzEldienMohsen/pikado-ui-task.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd pikado-ui-task
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+5. **Open your browser:**
+   Navigate to http://localhost:3000 to view the project.
+
+## Project Structure
+
+├── src
+│ ├── components
+│ │ ├── Sidebar.tsx
+│ │ ├── TopNav.tsx
+│ │ └── Table.tsx
+│ ├── context
+│ │ └── ThemeContext.tsx (if light/dark mode is implemented)
+│ ├── pages
+│ │ └── Dashboard.tsx
+│ └── App.tsx
+├── tailwind.config.js
+├── tsconfig.json
+└── package.json
+
+## Approach
+
+UI Implementation:
+The dashboard is built using modular React components. The sidebar is responsive and collapsible, while the top navigation bar includes key elements such as the project title and user avatar.
+
+Responsive Behavior:
+Tailwind CSS utility classes are used to ensure the layout adapts to different screen sizes, providing an optimal experience on both desktop and mobile devices.
+
+TypeScript and Code Quality:
+Strongly typed props and interfaces ensure code clarity and maintainability. React Hooks manage state and behavior in a clean, functional style.
+
+Bonus Feature:
+(If implemented) The light/dark mode toggle leverages React Context API to manage theme changes across the application.
+
+## Deployment
+
+The project is deployed on Vercel and is accessible at:
+https://pikado-ui-task.vercel.app/
+
+## Future Enhancements
+
+Adding interactive functionalities to the table (e.g., sorting and filtering)
+Integrating with a backend for dynamic data
+Further refining UI/UX based on user feedback
